@@ -18,5 +18,16 @@ document.getElementById('btn-submit').addEventListener('click', function(){
     
     const passwordField= document.getElementById('user-password');
     const password= passwordField.value;
-    console.log(email, password);
+    //console.log(email, password);
+
+    //do not verify email password on the client side
+
+    // step: 4 verify email password
+
+    if(email=='gazi@gmail.com' && password=='text123'){
+        window.location.href='bank.html'
+    }
+    else{
+       alert('password bhulsos keno? tor khabor ache ajke');
+    }
 })

@@ -37,7 +37,9 @@ document.getElementById('btn-withdraw').addEventListener('click', function(){
     const previousbalanceTotalString= balanceTotalElement.innerText;
     const previousBalanceTotal= parseFloat(previousbalanceTotalString);
    // console.log(previousBalanceTotal);
-
+     if(newWithdrawAmount>previousBalanceTotal){
+        alert('eto taka nai');
+     }
     //step-6
    const newbalance= previousBalanceTotal- newWithdrawAmount;
    balanceTotalElement.innerText= newbalance;
